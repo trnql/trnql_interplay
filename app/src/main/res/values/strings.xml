@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TRNQL Interplay</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="splash_text">This app is intended for developers. \n\nIncorporating meaningful contextual experiences into applications should be easy. \n\nWith the trnql SDK, it is. </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_default">You are in&#160;</string>
+    <string name="input_text_default">input</string>
+    <string name="weather_rec_default">Ain\'t the weather nice?</string>
+    <string name="location_card_default">Finding your location...</string>
+    <string name="sun_default">Let\'s see when the sun is rising...</string>
+    <!-- Weather Strings -->
+    <string name="cold">Get out while you can</string>
+    <string name="jacket">It\'s cold enough to wear a jacket</string>
+    <string name="sweater">It\'s cold enough to wear a sweater</string>
+    <string name="room">It\'s room temperature</string>
+    <string name="warm">It\'s kind of warm</string>
+    <string name="hot">It\'s blazing</string>
+    <!-- Accessibility -->
+    <string name="accessibility_overflow">Overflow Menu</string>
+    <string name="title_activity_activity_data">ActivityData</string>
+    <string name="title_activity_weather_data">WeatherData</string>
+    <string name="title_activity_location_data">LocationData</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="splash_start_button">Let\'s Go!</string>
+    <string name="unknown_value_ellipsis"> ...</string>
+
+</resources>

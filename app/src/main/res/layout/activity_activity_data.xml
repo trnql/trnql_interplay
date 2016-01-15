@@ -1,0 +1,195 @@
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.trnql.sample_interplay.ActivityData"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:text="Activity Data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_data_header"
+                android:textSize="@dimen/data_activity_header"
+                android:textStyle="bold" android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/in_vehicle_prefix"
+                    android:text="In vehicle: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_vehicle_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/on_bicycle_prefix"
+                    android:text="On bicycle: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_bicycle_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/walking_prefix"
+                    android:text="Is walking: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_walking_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/running_prefix"
+                    android:text="Is running: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_running_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/on_foot_prefix"
+                    android:text="On foot: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_foot_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:id="@+id/still_prefix"
+                    android:text="Is still: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_still_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tilting_prefix"
+                    android:text="Is tilting: "
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_value_ellipsis"
+                    android:id="@+id/tv_tilting_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To access this data, simply extend a SmartContext class and override the smartActivityChange(ActivityEntry userActivity) method:"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/activity_method"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"/>
+
+            <TextView
+                    android:id="@+id/tv_learn_more"
+                    android:text="Learn how at trnql.com/guides"
+                    android:textColor="@color/material_blue_grey_800"
+                    android:textSize="@dimen/data_activity_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+

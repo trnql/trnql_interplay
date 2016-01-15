@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.trnql.sample_interplay">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+            android:name=".InterplayApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            tools:replace="android:name">
+
+        <service
+                android:name="com.trnql.smart.location.SmartLocationService"
+                android:label="TRNQL_SDK - SmartLocation Service"/>
+        <service
+                android:name="com.trnql.smart.activity.SmartActivityService"
+                android:label="TRNQL_SDK - SmartActivity Service"/>
+        <service
+                android:name="com.trnql.smart.activity.ActivityRecognitionIntentService"
+                android:label="TRNQL_SDK - SmartActivity Intent Service for GMS"/>
+
+        <service
+                android:name="com.trnql.smart.weather.SmartWeatherService"
+                android:label="TRNQL_SDK - SmartWeather Service"/>
+
+        <service
+                android:name="com.trnql.smart.places.SmartPlacesService"
+                android:label="TRNQL_SDK - SmartPlaces Service" />
+
+        <service
+                android:name="com.trnql.smart.people.SmartPeopleService"
+                android:label="TRNQL_SDK - SmartPeople Service" />
+
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version"/>
+
+        <activity
+                android:name=".SplashScreenActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name">
+        </activity>
+
+        <activity
+                android:name=".ActivityData"
+                android:label="@string/title_activity_activity_data">
+        </activity>
+
+        <activity
+                android:name=".WeatherData"
+                android:label="@string/title_activity_weather_data">
+        </activity>
+
+        <activity
+                android:name=".LocationData"
+                android:label="@string/title_activity_location_data">
+        </activity>
+
+        <activity android:name=".PlacesData"
+                  android:label="PlacesData">
+        </activity>
+
+        <activity android:name=".MorePlaces"
+                  android:label="MorePlaces">
+        </activity>
+
+        <activity android:name=".PeopleData"
+                  android:label="PeopleData">
+        </activity>
+
+        <service
+                android:name=".ImageDownloadIntentService"
+                android:exported="false">
+        </service>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="PUT_GOOGLE_MAPS_API_KEY_HERE" />
+
+    </application>
+
+</manifest>

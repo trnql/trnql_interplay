@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Database -->
+    <item type="id" name="db_kvp_locality" />
+
+    <!-- Observable Properties -->
+    <item type="id" name="pop_location_bitmap"/>
+    <item type="id" name="op_img_last_load"/>
+
+    <!-- Local Events -->
+    <item type="id" name="evt_img_downloaded" />
+    <item type="id" name="evt_user_at_home"/>
+    <item type="id" name="evt_user_at_work"/>
+
+</resources>
