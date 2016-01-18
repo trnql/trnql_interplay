@@ -52,7 +52,7 @@ public class SplashScreenActivity extends SmartCompatActivity {
 
 
     private void _setupTrnqlSDK() {
-        getAppData().setApiKey("87f02bf0-8457-4a38-a008-f22223f54d09");
+        getAppData().setApiKey("PUT_YOUR_API_KEY_HERE");
         getPlacesManager().setIncludeImages(true);
         getPlacesManager().setRadius(5000);
 
